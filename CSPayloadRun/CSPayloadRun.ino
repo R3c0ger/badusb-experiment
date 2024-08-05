@@ -1,9 +1,9 @@
 #include <Keyboard.h>
 
 // 输入一行命令，自带回车
-void sendCmd(const char* sequence) {
+void sendCmd(const char* sequence, int delayTime = 500) {
   Keyboard.println(sequence);
-  delay(500);
+  delay(delayTime);
 }
 
 // 按下一个键，然后释放，指定按住的时间、释放后延时的时间

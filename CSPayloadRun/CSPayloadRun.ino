@@ -43,7 +43,7 @@ void main_process() {
   int keyList2[] = {KEY_LEFT_CTRL, KEY_LEFT_SHIFT, KEY_RETURN};
   pressKeys(keyList2, 3, 0, 2000);
 
-  // 确认用户账户控制通知，如果被关闭，下面的代码也不会起作用
+  // 过UAC，确认用户账户控制通知，如果被关闭，下面的代码也不会起作用
   pressKey(KEY_LEFT_ARROW, 0, 200);  // 按下左键
   pressKey(KEY_RETURN, 0, 2000);  // 按下回车
 
